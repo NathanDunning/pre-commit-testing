@@ -1,4 +1,5 @@
 resource "local_file" "foo" {
-  content  = "This is a test foo file"
-  filename = "foo.txt"
+  content         = var.file_content
+  filename        = var.file_name
+  file_permission = var.file_permissions
 }
